@@ -1,4 +1,13 @@
 
+section {
+    padding: 35px 0 60px;
+}
+
+
+
+
+
+
 @media screen and (min-width: 1000px) {
 .content {
         width: 1000px;
