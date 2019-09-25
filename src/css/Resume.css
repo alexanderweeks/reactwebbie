@@ -94,7 +94,8 @@
   }
   
   @media (min-width: 992px) {
-    #sideNav {
+    /* Puts it to the side */
+    #sideNav { 
       text-align: center;
       position: fixed;
       top: 0;
@@ -104,6 +105,7 @@
       width: 17rem;
       height: 100vh;
     }
+    
     #sideNav .navbar-brand {
       display: flex;
       margin: auto auto 0;
@@ -121,6 +123,7 @@
       width: 100%;
       margin-bottom: auto;
     }
+    /* Forces Column behaviour */
     #sideNav .navbar-collapse .navbar-nav {
       flex-direction: column;
       width: 100%;
