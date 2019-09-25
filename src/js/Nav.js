@@ -1,21 +1,56 @@
 import React, { Component } from 'react';
 import ThumbnailImage from '../img/personal.JPG';
 
-class InternalSpan extends Component {
-
+class Personal extends Component {
     render() {
         return (
-            <span class="d-block d-lg-none">{this.props.content}</span>
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">{this.props.name}</span>
+                <span class="d-none d-lg-block">
+                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src={ThumbnailImage} alt="" />
+                </span>
+            </a>
+        )
+    }
+}
+class ToggleButton extends Component {
+    render() {
+        return (
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
         )
     }
 }
 
-class PersonalImage extends Component {
+function getHref(value) {
+    return "#" + value.toLowerCase();
+}
+
+class MenuItem extends Component {
     render() {
         return (
-            <span class="d-none d-lg-block">
-                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src={ThumbnailImage} alt="" />
-            </span>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href={getHref(this.props.value)}>{this.props.value}</a>
+            </li>
+        )
+    }
+}
+
+class Menu extends Component {
+    render() {
+        return (
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <MenuItem value="About" />
+                    <MenuItem value="Experience" />
+                    <MenuItem value="Education" />
+                    <MenuItem value="Skills" />
+                    <MenuItem value="Interests" />
+                    <MenuItem value="Awards" />
+                </ul>
+            </div>
+
         )
     }
 }
@@ -25,35 +60,9 @@ class Nav extends Component {
     render() {
         return (
             <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-                <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                    <InternalSpan content="Alex Weeks"/>
-                    <PersonalImage />
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
-                    </li>
-                </ul>
-                </div>
+                <Personal name="Alex Weeks"/>
+                <ToggleButton />
+                <Menu />
             </nav>
         )
     }
