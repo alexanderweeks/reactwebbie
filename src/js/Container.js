@@ -1,24 +1,44 @@
 import React, { Component } from 'react';
+// import Icons from './Icons.js';
+import {GithubIcon, FacebookIcon, TwitterIcon} from './Icons.js';
 
-class Container extends Component {
+class SociaIcon extends Component {
+  
   render() {
     return (
-      <div class="container-fluid p-0">
+      <a onClick={this.props.link}>
+        {this.props.svg.prototype.render(this.props)}
+      </a>
+    )
+  }
+  
+    constructor(props) {
+      super(props);
+      console.log("Here");
+      console.log(props);
+    }
+}
 
+class About extends Component {
+  render() {
+    return (
         <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
           <div class="w-100">
-            <h1 class="mb-0">Clarence
-          <span class="text-primary">Taylor</span>
+            <h1 class="mb-0">Alex
+              <span class="text-primary">Weeks</span>
             </h1>
-            <div class="subheading mb-5">3542 Berry Street · Cheyenne Wells, CO 80810 · (317) 585-8468 ·
-          <a href="mailto:name@email.com">name@email.com</a>
+            <div class="subheading mb-5">Farnham, Surrey, UK · linkedin.com/in/alexander-t-weeks · (+44) 7780 332641<br/>
+              <a href="mailto:name@email.com">alexandertweeks@gmail.com</a>
             </div>
             <p class="lead mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
-            <div class="social-icons">
-              <a href="#">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-              <a href="#">
+            {/* <div class="social-icons"> */}
+            <div>
+              {/* <SociaIcon svg={GithubIcon} link={() => window.open("https://github.com/alexanderweeks", "_blank")} /> */}
+                {/* <GithubIcon /> */}
+              <GithubIcon />
+              <FacebookIcon />
+              <TwitterIcon />
+              {/* <a href="#">
                 <i class="fab fa-github"></i>
               </a>
               <a href="#">
@@ -26,12 +46,28 @@ class Container extends Component {
               </a>
               <a href="#">
                 <i class="fab fa-facebook-f"></i>
-              </a>
+              </a> */}
             </div>
           </div>
         </section>
+    )
+  }
+}
 
-        <hr class="m-0" />
+class HR extends Component {
+  render() {
+    return (
+      <hr class="m-0" />
+    )
+  }
+}
+
+class Container extends Component {
+  render() {
+    return (
+      <div class="container-fluid p-0">
+        <About />
+        <HR />
 
         <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
           <div class="w-100">
