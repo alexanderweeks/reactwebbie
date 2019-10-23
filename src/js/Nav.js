@@ -13,7 +13,7 @@ class MenuItem extends Component {
                 <Link className="nav-link" activeClass="active" to={this.props.id} spy={true} smooth={true} offset={0} duration={500} >
                     {this.props.value}
                 </Link>
-                {/* <a class="nav-link" href={getHref(this.props.value)}>{this.props.value}</a> */}
+                {/* <a className="nav-link" href={getHref(this.props.value)}>{this.props.value}</a> */}
             </li>
         )
     }
@@ -22,8 +22,8 @@ class MenuItem extends Component {
 class Menu extends Component {
     render() {
         return (
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav">
+            <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul className="navbar-nav">
                     <MenuItem value="About" id="about"/>
                     <MenuItem value="Experience" id="experience" />
                     <MenuItem value="Education" id="education" />
