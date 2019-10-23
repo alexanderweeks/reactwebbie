@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 
-import './css/fonts.css';
-
-import './App.css';
-import './Content.css';
+import './css/Logo.css';
 import './css/Resume.css';
-// import Header from './js/Header.js';
+
 import Nav from './js/Nav.js';
 import Container from './js/Container.js';
 
