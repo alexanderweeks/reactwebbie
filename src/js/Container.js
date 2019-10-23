@@ -103,6 +103,25 @@ class Experience extends Component {
   }
 }
 
+class InformationItem extends Component {
+  render() {
+    return (
+      <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+        <div className="resume-content">
+          <h3 className="mb-0">{this.props.title}</h3>
+          <div className="subheading mb-3">{this.props.subheading}</div>
+          <div>{this.props.content}</div>
+          {/* <p>GPA: 3.23</p> */}
+        </div>
+        <div className="resume-date text-md-right">
+          <span className="text-primary">{this.props.date}</span>
+        </div>
+      </div>
+
+    )
+  }
+}
+
 class Education extends Component {
   render() {
     return (
@@ -110,28 +129,14 @@ class Education extends Component {
           <div className="w-100">
             <h2 className="mb-5">Education</h2>
 
-            <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-              <div className="resume-content">
-                <h3 className="mb-0">University of Bath</h3>
-                <div className="subheading mb-3">Computer Science and Maths</div>
-                <div>First Class with Honours</div>
-                {/* <p>GPA: 3.23</p> */}
-              </div>
-              <div className="resume-date text-md-right">
-                <span className="text-primary">2015 - 2019</span>
-              </div>
-            </div>
+            <InformationItem title="University of Bath" subheading="Computer Science and Mathematics" 
+                content="First Class BSc with Honours" date="September 2015 - May 2019"/>
 
-            <div className="resume-item d-flex flex-column flex-md-row justify-content-between">
-              <div className="resume-content">
-                <h3 className="mb-0">Alton Sixth Form College</h3>
-                <div className="subheading mb-3">Technology Magnet Program</div>
-                <p>GPA: 3.56</p>
-              </div>
-              <div className="resume-date text-md-right">
-                <span className="text-primary">August 2002 - May 2006</span>
-              </div>
-            </div>
+            <InformationItem title="Alton Sixth Form College" subheading="A Levels" 
+                content="A* Further Maths · A* Maths · A Physics" date="September 2013 - May 2015" />
+
+            <InformationItem title="All Hallows Secondary School" subheading="GCSEs"
+                content="13 GCSEs A* to A incl. A*s in Maths, English Lit. &amp; English Lang." date="September 2006 - May 2013"/>
 
           </div>
         </section>
