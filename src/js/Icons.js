@@ -31,7 +31,7 @@ class TwitterSVG extends React.Component {
 export class GithubIcon extends React.Component {
     render() {
         return (
-            <a onClick={() => window.open("https://github.com/alexanderweeks", "_blank")}>
+            <a className="icons" onClick={() => window.open("https://github.com/alexanderweeks", "_blank")}>
                 <GithubSVG width={this.props.width} height={this.props.height} />
               </a>
         )
@@ -40,7 +40,7 @@ export class GithubIcon extends React.Component {
 export class FacebookIcon extends React.Component {
     render() {
         return (
-            <a onClick={() => window.open("#", "_blank")}>
+            <a className="icons" onClick={() => window.open("#", "_blank")}>
                 <FacebookSVG width={this.props.width} height={this.props.height} />
               </a>
         )
@@ -49,7 +49,7 @@ export class FacebookIcon extends React.Component {
 export class TwitterIcon extends React.Component {
     render() {
         return (
-            <a onClick={() => window.open("#", "_blank")}>
+            <a className="icons" onClick={() => window.open("#", "_blank")}>
                 <TwitterSVG width={this.props.width} height={this.props.height} />
               </a>
         )

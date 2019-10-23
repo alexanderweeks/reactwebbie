@@ -31,22 +31,11 @@ class About extends Component {
               <a href="mailto:name@email.com">alexandertweeks@gmail.com</a>
             </div>
             <p class="lead mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
-            {/* <div class="social-icons"> */}
+            
             <div>
-              {/* <SociaIcon svg={GithubIcon} link={() => window.open("https://github.com/alexanderweeks", "_blank")} /> */}
-                {/* <GithubIcon /> */}
               <GithubIcon />
               <FacebookIcon />
               <TwitterIcon />
-              {/* <a href="#">
-                <i class="fab fa-github"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-facebook-f"></i>
-              </a> */}
             </div>
           </div>
         </section>
@@ -302,6 +291,8 @@ class Container extends Component {
         <Interests />
 
         <HR />
+
+        <Awards />
 
       </div>
     )
