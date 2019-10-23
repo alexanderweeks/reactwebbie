@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link, animateScroll as scroll} from 'react-scroll';
 import ThumbnailImage from '../img/personal.JPG';
 
 function getHref(value) {
@@ -8,8 +9,11 @@ function getHref(value) {
 class MenuItem extends Component {
     render() {
         return (
-            <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href={getHref(this.props.value)}>{this.props.value}</a>
+            <li className="nav-item">
+                <Link className="nav-link" activeClass="active" to={this.props.id} spy={true} smooth={true} offset={0} duration={500} >
+                    {this.props.value}
+                </Link>
+                {/* <a class="nav-link" href={getHref(this.props.value)}>{this.props.value}</a> */}
             </li>
         )
     }
@@ -20,7 +24,7 @@ class Menu extends Component {
         return (
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
-                    <MenuItem value="About" />
+                    <MenuItem value="About" id="about"/>
                     <MenuItem value="Experience" />
                     <MenuItem value="Education" />
                     <MenuItem value="Skills" />
