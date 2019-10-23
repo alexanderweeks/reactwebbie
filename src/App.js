@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+
+import './css/fonts.css';
+
 import './App.css';
 import './Content.css';
 import './css/Resume.css';
@@ -10,7 +13,7 @@ import Container from './js/Container.js';
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div>
         <Nav />
         <Container />
       </div>

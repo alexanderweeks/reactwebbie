@@ -112,19 +112,19 @@ class Education extends Component {
 
             <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
               <div className="resume-content">
-                <h3 className="mb-0">University of Colorado Boulder</h3>
-                <div className="subheading mb-3">Bachelor of Science</div>
-                <div>Computer Science - Web Development Track</div>
-                <p>GPA: 3.23</p>
+                <h3 className="mb-0">University of Bath</h3>
+                <div className="subheading mb-3">Computer Science and Maths</div>
+                <div>First Class with Honours</div>
+                {/* <p>GPA: 3.23</p> */}
               </div>
               <div className="resume-date text-md-right">
-                <span className="text-primary">August 2006 - May 2010</span>
+                <span className="text-primary">2015 - 2019</span>
               </div>
             </div>
 
             <div className="resume-item d-flex flex-column flex-md-row justify-content-between">
               <div className="resume-content">
-                <h3 className="mb-0">James Buchanan High School</h3>
+                <h3 className="mb-0">Alton Sixth Form College</h3>
                 <div className="subheading mb-3">Technology Magnet Program</div>
                 <p>GPA: 3.56</p>
               </div>
