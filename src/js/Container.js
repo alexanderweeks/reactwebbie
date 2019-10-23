@@ -54,22 +54,11 @@ class About extends Component {
   }
 }
 
-class HR extends Component {
+class Experience extends Component {
+
   render() {
     return (
-      <hr class="m-0" />
-    )
-  }
-}
-
-class Container extends Component {
-  render() {
-    return (
-      <div class="container-fluid p-0">
-        <About />
-        <HR />
-
-        <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
+      <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
           <div class="w-100">
             <h2 class="mb-5">Experience</h2>
 
@@ -120,10 +109,14 @@ class Container extends Component {
           </div>
 
         </section>
+    )
+  }
+}
 
-        <hr class="m-0" />
-
-        <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
+class Education extends Component {
+  render() {
+    return (
+      <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
           <div class="w-100">
             <h2 class="mb-5">Education</h2>
 
@@ -152,10 +145,14 @@ class Container extends Component {
 
           </div>
         </section>
+    )
+  }
+}
 
-        <hr class="m-0" />
-
-        <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
+class Skills extends Component {
+  render() {
+    return (
+      <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
           <div class="w-100">
             <h2 class="mb-5">Skills</h2>
 
@@ -216,20 +213,28 @@ class Container extends Component {
             </ul>
           </div>
         </section>
+    )
+  }
+}
 
-        <hr class="m-0" />
+class Interests extends Component {
+  render() {
+    return (
+      <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
+        <div class="w-100">
+          <h2 class="mb-5">Interests</h2>
+          <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
+          <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
+        </div>
+      </section>
+    )
+  }
+}
 
-        <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
-          <div class="w-100">
-            <h2 class="mb-5">Interests</h2>
-            <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
-            <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
-          </div>
-        </section>
-
-        <hr class="m-0" />
-
-        <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
+class Awards extends Component {
+  render() {
+    return (
+      <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
           <div class="w-100">
             <h2 class="mb-5">Awards &amp; Certifications</h2>
             <ul class="fa-ul mb-0">
@@ -262,6 +267,41 @@ class Container extends Component {
             </ul>
           </div>
         </section>
+    )
+  }
+}
+
+class HR extends Component {
+  render() {
+    return (
+      <hr class="m-0" />
+    )
+  }
+}
+
+class Container extends Component {
+  render() {
+    return (
+      <div class="container-fluid p-0">
+        <About />
+
+        <HR />
+
+        <Experience />
+
+        <HR />
+
+        <Education />
+
+        <HR />
+
+        <Skills />
+
+        <HR />
+
+        <Interests />
+
+        <HR />
 
       </div>
     )

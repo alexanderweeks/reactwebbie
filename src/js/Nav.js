@@ -25,11 +25,11 @@ class Menu extends Component {
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <MenuItem value="About" id="about"/>
-                    <MenuItem value="Experience" />
-                    <MenuItem value="Education" />
-                    <MenuItem value="Skills" />
-                    <MenuItem value="Interests" />
-                    <MenuItem value="Awards" />
+                    <MenuItem value="Experience" id="experience" />
+                    <MenuItem value="Education" id="education" />
+                    <MenuItem value="Skills" id="skills" />
+                    <MenuItem value="Interests" id="interests" />
+                    <MenuItem value="Awards" id="awards" />
                 </ul>
             </div>
 
