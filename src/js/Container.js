@@ -27,11 +27,12 @@ class About extends Component {
             <h1 class="mb-0">Alex
               <span class="text-primary">Weeks</span>
             </h1>
-            <div class="subheading mb-5">Farnham, Surrey, UK · linkedin.com/in/alexander-t-weeks · (+44) 7780 332641<br/>
+            <div class="subheading mb-5">Farnham,&nbsp;Surrey,&nbsp;UK · linkedin.com/in/alexander-t-weeks · (+44)&nbsp;7780&nbsp;332641<br/>
               <a href="mailto:name@email.com">alexandertweeks@gmail.com</a>
             </div>
-            <p class="lead mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
-            
+            <p className="lead mb-5 super-aesthetic" >
+              it just me being me
+            </p>
             <div>
               <GithubIcon />
               <FacebookIcon />
