@@ -4,6 +4,10 @@ import {GithubIcon, FacebookIcon, TwitterIcon} from './Icons.js';
 
 class SociaIcon extends Component {
   
+  constructor(props) {
+    super(props);
+  }
+  
   render() {
     return (
       <a onClick={this.props.link}>
@@ -12,11 +16,6 @@ class SociaIcon extends Component {
     )
   }
   
-    constructor(props) {
-      super(props);
-      console.log("Here");
-      console.log(props);
-    }
 }
 
 class About extends Component {
