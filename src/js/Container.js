@@ -2,23 +2,15 @@ import React, { Component } from 'react';
 // import Icons from './Icons.js';
 import {GithubIcon, FacebookIcon, TwitterIcon} from './Icons.js';
 
-class SociaIcon extends Component {
-  
+class About extends Component {
+
   constructor(props) {
     super(props);
+    this.state = {
+      email: "alexandertweeks@gmail.com" 
+    }
   }
-  
-  render() {
-    return (
-      <a onClick={this.props.link}>
-        {this.props.svg.prototype.render(this.props)}
-      </a>
-    )
-  }
-  
-}
 
-class About extends Component {
   render() {
     return (
         <section className="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
@@ -27,7 +19,7 @@ class About extends Component {
               <span className="text-primary">Weeks</span>
             </h1>
             <div className="subheading mb-5">Farnham,&nbsp;Surrey,&nbsp;UK · linkedin.com/in/alexander-t-weeks · (+44)&nbsp;7780&nbsp;332641<br/>
-              <a href="mailto:name@email.com">alexandertweeks@gmail.com</a>
+              <a href="mailto:name@email.com">{this.state.email}</a>
             </div>
             <p className="lead mb-5 super-aesthetic" >
               it just me being me
