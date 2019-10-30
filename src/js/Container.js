@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 // import Icons from './Icons.js';
 import {GithubIcon, FacebookIcon, TwitterIcon} from './Icons.js';
+import Carousel from 'react-bootstrap/Carousel';
 
 class About extends Component {
 
@@ -128,6 +129,20 @@ class Education extends Component {
 
             <InformationItem title="All Hallows Secondary School" subheading="GCSEs"
                 content="13 GCSEs A* to A incl. A*s in Maths, English Lit. &amp; English Lang." date="September 2006 - May 2013"/>
+
+            {/* <Carousel>
+            <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src="holder.js/800x400?text=First slide&bg=373940"
+      alt="First slide"
+    />
+    <Carousel.Caption>
+      <h3>First slide label</h3>
+      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+            </Carousel> */}
 
           </div>
         </section>
