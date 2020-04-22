@@ -8,7 +8,7 @@ class About extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      email: "alexandertweeks@gmail.com" 
+      email: "alexander t weeks [at] gmail [dot] com" 
     }
   }
 
@@ -19,7 +19,9 @@ class About extends Component {
             <h1 className="mb-0">Alex
               <span className="text-primary">Weeks</span>
             </h1>
-            <div className="subheading mb-5">Farnham,&nbsp;Surrey,&nbsp;UK · linkedin.com/in/alexander-t-weeks · (+44)&nbsp;7780&nbsp;332641<br/>
+            <div className="subheading mb-5">Farnham,&nbsp;Surrey,&nbsp;UK · linkedin.com/in/alexander-t-weeks 
+            {/* · (+44)&nbsp;7780&nbsp;332641 */}
+            <br/>
               <a href="mailto:name@email.com">{this.state.email}</a>
             </div>
             <p className="lead mb-5 super-aesthetic" >
@@ -44,7 +46,7 @@ class Experience extends Component {
           <div className="w-100">
             <h2 className="mb-5">Experience</h2>
 
-            <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+            {/* <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
               <div className="resume-content">
                 <h3 className="mb-0">Senior Web Developer</h3>
                 <div className="subheading mb-3">Intelitec Solutions</div>
@@ -86,7 +88,7 @@ class Experience extends Component {
               <div className="resume-date text-md-right">
                 <span className="text-primary">September 2008 - June 2010</span>
               </div>
-            </div>
+            </div> */}
 
           </div>
 
@@ -158,7 +160,7 @@ class Skills extends Component {
             <h2 className="mb-5">Skills</h2>
 
             <div className="subheading mb-3">Programming Languages &amp; Tools</div>
-            <ul className="list-inline dev-icons">
+            {/* <ul className="list-inline dev-icons">
               <li className="list-inline-item">
                 <i className="fab fa-html5"></i>
               </li>
@@ -211,7 +213,7 @@ class Skills extends Component {
               <li>
                 <i className="fa-li fa fa-check"></i>
                 Agile Development &amp; Scrum</li>
-            </ul>
+            </ul> */}
           </div>
         </section>
     )
@@ -223,9 +225,9 @@ class Interests extends Component {
     return (
       <section className="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
         <div className="w-100">
-          <h2 className="mb-5">Interests</h2>
+          {/* <h2 className="mb-5">Interests</h2>
           <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
-          <p className="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
+          <p className="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p> */}
         </div>
       </section>
     )
@@ -239,7 +241,7 @@ class Awards extends Component {
           <div className="w-100">
             <h2 className="mb-5">Awards &amp; Certifications</h2>
             <ul className="fa-ul mb-0">
-              <li>
+              {/* <li>
                 <i className="fa-li fa fa-trophy text-warning"></i>
                 Google Analytics Certified Developer</li>
               <li>
@@ -264,7 +266,7 @@ class Awards extends Component {
               <li>
                 <i className="fa-li fa fa-trophy text-warning"></i>
                 3<sup>rd</sup>
-                Place - James Buchanan High School - Hackathon 2005</li>
+                Place - James Buchanan High School - Hackathon 2005</li> */}
             </ul>
           </div>
         </section>
