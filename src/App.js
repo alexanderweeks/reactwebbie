@@ -7,13 +7,16 @@ import './css/Resume.css';
 import Nav from './js/Nav.js';
 import Container from './js/Container.js';
 
+import Header from './js/Header.js';
+import Main from './js/Main.js';
+
 class App extends Component {
   render() {
     return (
-      <div>
-        <Nav />
-        <Container />
-      </div>
+      <>
+        <Header />
+        <Main />
+      </>
     );
   }
 }
