@@ -7,10 +7,75 @@ section {
 }
 
 section.hero {
+
+    position: relative;
+
     background-color: rgba(0,0,0,0.5);
 
     height: calc(100vh - var(--header_height));
 }
+.title {
+    position: relative;
+    /* top: calc(50vh - var(--header_height)); */
+    top: 35%;
+    text-align: center;
+}
+
+ h1 {
+    color: white;
+    /* font-weight: 700; */
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+p.subheading {
+    font-size: 1.5rem;
+    letter-spacing: 0.25rem;
+
+    color: wheat;
+}
+
+.footer {
+    position: absolute;
+
+    display: flex;
+
+    bottom: 0;
+    width: 100%;
+
+    height: var(--header_height);
+
+    color: white;
+    text-align: center;
+
+    /* margin-top: auto;
+    margin-bottom: auto; */
+    /* margin-bottom: var(--header_height); */
+}
+
+p.scroll {
+    position: relative;
+
+    margin: auto;
+
+    font-size: 2rem;
+    letter-spacing: 0.25rem;
+
+    color: wheat;
+
+    animation-name: bounce;
+
+    animation-delay: 2s;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+@keyframes bounce {
+    0%, 20%, 50%, 70%, 100% {transform: translateY(0);}
+    45% {transform: translateY(-20px);}
+    55% {transform: translateY(-10px);}
+
+}
+
 section.section1 {
     height: 50vh;
     background-color: rgba(0, 0, 255, 0.5);
