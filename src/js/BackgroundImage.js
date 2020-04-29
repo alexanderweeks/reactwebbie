@@ -1,11 +1,13 @@
 import React from 'react';
 
-import '../css/Image.css';
+import '../css/BackgroundImage.css';
 
 class Image extends React.Component {
     render() {
         return (
-            <div className="bg"></div>
+            <div className="bg">
+                <div className="layer"></div>
+            </div>
         )
     }
 }

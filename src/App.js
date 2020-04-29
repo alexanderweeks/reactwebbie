@@ -11,15 +11,17 @@ import './css/App.css';
 
 import Header from './js/Header.js';
 import Main from './js/Main.js';
-import Image from './js/Image.js';
+import BackgroundImage from './js/BackgroundImage.js';
 
 class App extends Component {
   render() {
     return (
       <>
-        <Image />
-        <Header />
-        <Main />
+        <BackgroundImage />
+        <div id="content">
+          <Header />
+          <Main />
+        </div>
       </>
     );
   }
