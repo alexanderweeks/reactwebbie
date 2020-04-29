@@ -11,11 +11,13 @@ import './css/App.css';
 
 import Header from './js/Header.js';
 import Main from './js/Main.js';
+import Image from './js/Image.js';
 
 class App extends Component {
   render() {
     return (
       <>
+        <Image />
         <Header />
         <Main />
       </>
