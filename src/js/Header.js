@@ -5,8 +5,13 @@ import '../css/Header.css';
 class Header extends Component {
     render() {
         return (
-            <header className="header">
+            <header>
+                <div className="nav-left">
 
+                </div>
+                <div className="nav-right">
+
+                </div>
             </header>
         )
     }
