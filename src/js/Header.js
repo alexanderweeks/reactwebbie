@@ -6,11 +6,14 @@ class Header extends Component {
     render() {
         return (
             <header>
-                <div className="nav-left">
-
+                <div className="nav-item employment">
+                    <a href="#">Employment</a>    
                 </div>
-                <div className="nav-right">
-
+                <div className="nav-item">
+                    <a href="#">Education</a>    
+                </div>
+                <div className="nav-item">
+                    <a href="#">Volunteering</a>    
                 </div>
             </header>
         )
